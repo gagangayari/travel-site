@@ -1,0 +1,178 @@
+//Navbar
+
+.navbar {
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 30px;
+  width: 80px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  // text-decoration: underline;
+  // border: 1px solid black;
+}
+
+
+// styles.scss
+
+.home {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 400px;
+  background-image: url('../assets/jeremy-brady-vK26p2SFX3E-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  // font-size: 36px;
+  // color: #623E2A;
+}
+
+.section {
+  padding: 40px;
+  background-color :#F4F1ED;
+  color: #623E2A;
+  // display: flex;
+}
+
+
+
+.subsection {
+  flex: 1;
+  padding: 20px;
+}
+#about-img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+.about-section {
+  display: flex;
+}
+.accommodations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-content p {
+  margin-top: 5px;
+}
+
+.testimonials {
+  background-image: url('../assets/david-marcu-78A265wPiO4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px;
+}
+
+.testimonials-content {
+  text-align: center;
+}
+
+.testimonials-content h2 {
+  font-size: 28px;
+}
+
+.testimonial {
+  margin-top: 20px;
+}
+
+.testimonial-content {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-content p {
+  margin-bottom: 10px;
+}
+
+.testimonial-content .user {
+  font-style: italic;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo h3 {
+  font-size: 24px;
+}
+
+.contact-info h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-media h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+
