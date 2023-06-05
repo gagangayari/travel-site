@@ -4,10 +4,10 @@
     <img src="../assets/logo.jpeg" alt="Company Logo">
   </div>
   <div class="nav-links">
-    <button class="nav-button btn ">Packages</button>
-    <button class="nav-button btn ">Treks</button>
-    <button class="nav-button btn " onclick="login();">Login</button>
-    <button class="nav-button btn ">Sign Up</button>
+    <button mat-button class="nav-button btn ">Packages</button>
+    <button mat-button class="nav-button btn ">Treks</button>
+    <button mat-button class="nav-button btn " (click)="login();">Login</button>
+    <button mat-button class="nav-button btn ">Sign Up</button>
   </div>
 </div>
 
@@ -17,6 +17,8 @@
   <section class="hero">
     <div class="hero-content">
       <h1 class="display-1">My Travel Site</h1>
+      <p class="lead">Enjoy your vacation</p>
+      <button class="btn btn-primary">Learn More</button>
     </div>
   </section>
 
@@ -39,6 +41,8 @@
         <div class="card-content">
           <h3>Location Name 1</h3>
           <p>Pricing: $100 per night</p>
+          <button class="btn">Check Out</button>
+
         </div>
       </div>
 
@@ -48,6 +52,7 @@
           <h3>Location Name 2</h3>
           <p>Pricing: $150 per night</p>
         </div>
+        <button class="btn">Check Out</button>
       </div>
 
       <div class="card">
@@ -55,6 +60,8 @@
         <div class="card-content">
           <h3>Location Name 3</h3>
           <p>Pricing: $120 per night</p>
+          <button class="btn">Check Out</button>
+
         </div>
       </div>
     </div>
@@ -88,11 +95,19 @@
       <p>Email: example@example.com</p>
       <p>Phone: 123-456-7890</p>
     </div>
+
     <div class="social-media">
-      <h4>Social Media Links</h4>
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">Instagram</a>
+      <h4>Connect with us</h4>
+
+      <div class="links">
+        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+      </div>
+
+
     </div>
   </footer>
 </div>
