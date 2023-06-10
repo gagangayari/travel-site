@@ -2,6 +2,7 @@
 .login-signup {
   // margin-top: 20px;
   height: 100%;
+  border-radius: 5em;
 
 }
 
@@ -32,6 +33,7 @@
 
 .card.show {
   display: block;
+  height: 100%;
 }
 
 h2 {
@@ -52,6 +54,7 @@ label {
 input {
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 1em;
 }
 
 button {

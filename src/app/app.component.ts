@@ -20,7 +20,9 @@ export class AppComponent {
     this.dialog.open(LoginComponent,
       {
         height: '400px',
-        width: '400px',}
+        width: '400px',
+      
+      }
         );
     
   }
