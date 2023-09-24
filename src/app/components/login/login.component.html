@@ -1,20 +1,32 @@
-
+<!-- 
 <div class="login-signup">
   <div class="tabs">
     <button class="tab" (click)="toggleTab('login')" [class.active]="activeTab === 'login'">Login</button>
     <button class="tab" (click)="toggleTab('signup')" [class.active]="activeTab === 'signup'">Sign Up</button>
   </div>
 
+  
   <div class="card" [ngClass]="{ 'show': activeTab === 'login' }">
     <h2>Login</h2>
-    <form>
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username">
+    <form class="login-form">
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password">
+      <mat-form-field class="input-group">
+        <i class="fa-solid fa-user"></i>
+        <input matInput  id="username" name="username">
+      </mat-form-field>
 
-      <button type="submit">Login</button>
+
+
+      <mat-form-field class="input-group">
+        <i class="fa-solid fa-key"></i>
+        <input matInput type="password" id="password" name="password">
+
+      </mat-form-field>
+
+
+      <div class="col-6">
+        <button type="submit" class="btn mt-5">Login</button>
+      </div>
     </form>
   </div>
 
@@ -30,8 +42,10 @@
       <label for="confirm-password">Confirm Password</label>
       <input type="password" id="confirm-password" name="confirm-password">
 
-      <button type="submit">Sign Up</button>
+      <div class="col-6 d-flex justify-content-md-end">
+        <button type="submit">Sign Up</button>
+      </div>
     </form>
   </div>
 </div>
-
+ -->

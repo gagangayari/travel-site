@@ -21,11 +21,11 @@
 
 .tab.active {
   background-color: #333;
-  color: #fff;
+  // color: #fff;
 }
 
 .card {
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
   padding: 20px;
   // margin-top: 20px;
   display: none;
@@ -51,10 +51,22 @@ label {
   margin-bottom: 5px;
 }
 
+.input-group{
+  display: flex;
+  color: #39424e;
+  // border: 1px solid;
+  // margin: 1em 0;
+  // border-color: #39424e;
+
+}
+
 input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 1em;
+  background: transparent;
+  background-color: transparent;
+  // padding: 10px;
+  // margin: 5px 15px;
+  // border-radius: 1em;
+  border: none;
 }
 
 button {

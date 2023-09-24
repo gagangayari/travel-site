@@ -1,82 +1,114 @@
 
-<div class="navbar">
-  <div class="logo d-flex gap-2">
-    <img src="../assets/logo.jpeg" alt="Company Logo">
-    <h3 class="">MyTravelSite</h3>
+<nav class="navbar bg-body-success">
+  <div class="logo d-flex justify-content-center align-items-center">
+    <img src="../assets/undraw_nature_m5ll.svg" alt="" width="50" height="34" class="img-fluid navbar-brand">
+    <h3 class="fs-3 font-monospace d-inline">MyTravelSite</h3>
+  </div>
 
-  </div>
-  <div class="nav-links">
-    <button mat-button class="nav-button btn ">Packages</button>
-    <button mat-button class="nav-button btn ">Treks</button>
-    <button mat-button class="nav-button btn " (click)="login();">Login</button>
-  </div>
-</div>
+
+  <ul class="nav">
+  
+    <li class="nav-item">
+      <a class="nav-link" href="#">Packages</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Treks</a>
+    </li>
+  </ul>
+
+</nav>
 
 <!-- app.component.html -->
 
-<div class="home">
-  
-  <section class="hero">
+<div class="">
+    <!-- Hero Section -->
+  <section class="container-fluid hero mb-5 d-flex flex-column">
     
-    <div class="hero-content">
+    <div class="hero-content bg-img bg-cover">
       <h1 class="lh-1">My Travel Site</h1>
       <p class="lead">Grab Holiday Deals!</p>
       <button class="btn btn-primary">Learn More</button>
     </div>
   </section>
 
-  <section class="section about-section">
-    <div class="subsection">
-      <h2>About Our Travel Site</h2>
+  <!-- Tours & Packages Section -->
+  <section class="container mt-3">
+    <h2 class="text-center mb-3 fs-1">Tours & Packages</h2>
+    <div class="row">
+      <div class="card col-sm" >
+        <img src="../assets/robert-lukeman-_RBcxo9AU-U-unsplash.jpg" alt="Image Description" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title fs-5">Location Name 1</h3>
+          <p> ₹1000 per night  <span class="ms-5"></span> <span class="ms-5">★★★★★ (101)</span></p>
+          <button class="btn btn-success">Know more</button>
+
+        </div>
+      </div>
+
+      <div class="card col-sm">
+        <img src="../assets/v2osk-1Z2niiBPg5A-unsplash.jpg" alt="Image Description" class="card-img-top">
+
+        <div class="card-body">
+
+          <h3 class="card-title fs-5">Location Name 2</h3>
+          <p > ₹1500 per night  <span class="ms-5"></span> <span class="ms-5">★★★★ (209)</span></p>
+          <button class="btn btn-success">Know more</button>
+
+
+        </div>
+      </div>
+
+      <div class="card col-sm">
+        <img src="../assets/david-marcu-78A265wPiO4-unsplash.jpg" alt="Image Description" class="card-img-top">
+        <div class="card-body pb-3">
+          <h3 class="card-title fs-5">Location Name 3</h3>
+          <p class=""> ₹1200 per night <span class="ms-5"></span> <span class="ms-5"> ★★★★★ (200)</span></p>
+          <button class="btn btn-success mx-auto">Know more</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="container d-flex bg-success p-4 mb-3 mt-3 justify-content-between align-items-center">
+    <div class="subsection col">
+      <h2 class="fs-3">About Our Travel Site</h2>
       <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies gravida justo, vitae varius nisi semper vitae. In sed purus tincidunt, semper purus ac, finibus justo. Morbi consequat cursus ante, ac blandit felis eleifend ac. Proin commodo, metus vitae iaculis suscipit, lacus turpis tristique tortor, sed tincidunt arcu metus eget elit.</p>
     </div>
 
-    <div class="subsection ">
-      <img src="../assets/adam-kool-ndN00KmbJ1c-unsplash.jpg" alt="Image Description" id="about-img">
+    <div class="col text-light ms-5 text-wrap tour-stats">
+    
+      <div class="row ">
+        <h1 class="card-title font-monospace fs-3 col-2">200+</h1>
+        <h2 class="text-body-secondary font-monospace col"> Tours completed</h2>
+      </div>
+
+      <div class="row ">
+        <h1 class="card-title font-monospace fs-3 col-2">45+</h1>
+        <h2 class="text-body-secondary font-monospace col"> Available Destinations</h2>
+      </div>
+      <div class="row ">
+        <h1 class="card-title font-monospace fs-3 col-2">30+</h1>
+        <h2 class="text-body-secondary font-monospace col"> Summer Holiday Destinations</h2>
+      </div>
+
+      <!-- <img src="../assets/undraw_aircraft_re_m05i.svg" alt="" height="100" width="500"> -->
+    
+
+
+      <!-- <img src="../assets/adam-kool-ndN00KmbJ1c-unsplash.jpg" alt="Image Description" id="about-img" class="img-fluid"> -->
+
     </div>
   </section>
 
-  <section class="section">
-    <h2 class="text-center mb-3 fs-1">Tours & Packages</h2>
-    <div class="accommodations">
-      <div class="card">
-        <img src="../assets/robert-lukeman-_RBcxo9AU-U-unsplash.jpg" alt="Image Description">
-        <div class="card-content">
-          <h3>Location Name 1</h3>
-          <p> ₹1000 per night  <span class="ms-5"></span> <span class="ms-5">★★★★★ (101)</span></p>
-          <button class="btn btn-light">Check Out</button>
+  <!-- Testimonials -->
+  <section class="container-fluid testimonials d-flex flex-column align-items-center">
+    <h2 class="font-monospace">Testimonials</h2>
 
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="../assets/v2osk-1Z2niiBPg5A-unsplash.jpg" alt="Image Description">
-        <div class="card-content">
-          <h3>Location Name 2</h3>
-          <p> ₹1500 per night  <span class="ms-5"></span> <span class="ms-5">★★★★ (209)</span></p>
-          <button class="btn btn-light">Check Out</button>
-
-
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="../assets/david-marcu-78A265wPiO4-unsplash.jpg" alt="Image Description">
-        <div class="card-content">
-          <h3>Location Name 3</h3>
-          <p class=""> ₹1200 per night <span class="ms-5"></span> <span class="ms-5"> ★★★★★ (200)</span></p>
-          <button class="btn btn-light mx-auto">Check Out</button>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="section testimonials">
-    <div class="testimonials-content">
-      <h2>Testimonials</h2>
+    <div class="testimonials-content d-flex flex-column">
       <div class="testimonial">
-        <div class="testimonial-content">
+        <div class="testimonial-content" >
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies gravida justo, vitae varius nisi semper vitae. In sed purus tincidunt, semper purus ac, finibus justo.</p>
           <p class="user">- John Doe</p>
         </div>
@@ -91,32 +123,40 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="logo rounded-50 d-flex gap-2">
-      <img src="../assets/logo.jpeg" alt="" >
+
+
+  <!-- Footer -->
+  <section class="footer container-fluid d-flex text-light bg-dark">
+    <!-- <div class="rounded-50 gap-2 col-sm">
+      <img src="../assets/logo.jpeg" alt="" width="30" height="24">
       <h3>MyTravelSite</h3>
 
+    </div> -->
+
+    <div class="logo col-sm d-flex align-items-center">
+      <img src="../assets/undraw_nature_m5ll.svg" alt="" width="30" height="24" class="img-fluid navbar-brand">
+      <h3 class="ms-1 font-monospace d-inline">MyTravelSite</h3>
     </div>
-    <div class="contact-info">
+    <div class="contact-info col-sm">
       <h4>Contact Information</h4>
       <p>Email: example@example.com</p>
       <p>Phone: 123-456-7890</p>
     </div>
 
-    <div class="social-media">
+    <div class="social-media col-sm">
       <h4>Connect with us</h4>
 
       <div class="links">
-        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
-        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"> <i class="fa-brands fa-facebook me-1"></i></a>
+        <a href="#"> <i class="fa-brands fa-twitter me-1"></i></a>
+        <a href="#"> <i class="fa-brands fa-instagram me-1"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp me-1"></i></a>
 
       </div>
 
 
     </div>
-  </footer>
+  </section>
 </div>
 
 <!-- app.component.html -->

@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatButtonModule} from '@angular/material/button'
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
