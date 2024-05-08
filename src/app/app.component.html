@@ -35,40 +35,11 @@
   <section class="container mt-3">
     <h2 class="text-center mb-3 fs-1">Tours & Packages</h2>
     <div class="row ">
-      <div class="card col-sm m-2 p-0" >
-        <img src="../assets/robert-lukeman-_RBcxo9AU-U-unsplash.jpg" alt="Image Description" class=" img-fluid">
-        <div class="card-body">
-          <h3 class="card-title fs-5">Location Name 1</h3>
-          <p> ₹1000 per night  <span class="ms-5"></span> <span class="ms-5">★★★★★ (101)</span></p>
-          <button class="btn btn-success">Know more</button>
-
-        </div>
-      </div>
-
-      <div class="card col-sm m-2 p-0">
-        <img src="../assets/v2osk-1Z2niiBPg5A-unsplash.jpg" alt="Image Description" class="img-fluid">
-
-        <div class="card-body">
-
-          <h3 class="card-title fs-5">Location Name 2</h3>
-          <p > ₹1500 per night  <span class="ms-5"></span> <span class="ms-5">★★★★ (209)</span></p>
-          <button class="btn btn-success">Know more</button>
-
-
-        </div>
-      </div>
-
-      <div class="card col-sm m-2 p-0">
-        <img src="../assets/david-marcu-78A265wPiO4-unsplash.jpg" alt="Image Description" class="img-fluid">
-        <div class="card-body pb-3">
-          <h3 class="card-title fs-5">Location Name 3</h3>
-          <p class=""> ₹1200 per night <span class="ms-5"></span> <span class="ms-5"> ★★★★★ (200)</span></p>
-          <button class="btn btn-success mx-auto">Know more</button>
-        </div>
-
-      </div>
+      <app-tour-cards></app-tour-cards>
+      <!-- <app-tour-cards *ngFor="let item of [1,2]"></app-tour-cards> -->
     </div>
   </section>
+
 
   <!-- About Us -->
   <section class="container d-flex bg-success p-4 mb-3 mt-3 justify-content-between align-items-center">

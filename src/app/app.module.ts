@@ -9,12 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button'
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
+import { TourCardsComponent } from './components/tour-cards/tour-cards.component';
+import { PackagePageComponent } from './components/package-page/package-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    TourCardsComponent,
+    PackagePageComponent
   ],
   imports: [
     BrowserModule,
