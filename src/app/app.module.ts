@@ -11,6 +11,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { TourCardsComponent } from './components/tour-cards/tour-cards.component';
 import { PackagePageComponent } from './components/package-page/package-page.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PackagePageComponent } from './components/package-page/package-page.com
     AppComponent,
     LoginComponent,
     TourCardsComponent,
-    PackagePageComponent
+    PackagePageComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

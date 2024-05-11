@@ -1,0 +1,128 @@
+
+<nav class="navbar bg-primary-subtle">
+    <div class="logo d-flex justify-content-center align-items-center ms-2  navbar-brand">
+      <img src="../assets/undraw_nature_m5ll.svg" alt="" class="img-fluid">
+      <h3 class="fs-3 font-monospace d-inline mt-3">{{title}}</h3>
+    </div>
+  
+  
+    <ul class="nav">
+    
+      <li class="nav-item">
+        <a class="nav-link fs-6 " href="#">Packages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-6 " href="#">Login</a>
+      </li>
+    </ul>
+  
+</nav>
+  
+  <!-- app.component.html -->
+  
+  <div class="">
+      <!-- Hero Section -->
+    <section class="container-fluid hero mb-5 d-flex flex-column">
+      
+      <div class="hero-content bg-img bg-cover">
+        <h1 class="lh-1">{{title}}</h1>
+        <p class="lead">Grab Holiday Deals!</p>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+    </section>
+  
+    <!-- Tours & Packages Section -->
+    <section class="container-fluid mt-3">
+      <h2 class="text-center mb-3 fs-1">Tours & Packages</h2>
+      <div class="d-flex flex-column flex-lg-row ">
+        <app-tour-cards *ngFor="let tour of tours" [tourObject]="tour"></app-tour-cards>
+      </div>
+
+    </section>
+  
+  
+  
+  
+    <!-- About Us -->
+    <section class="container d-flex bg-primary-subtle p-4 mb-3 mt-3 justify-content-between align-items-center">
+      <div class="subsection col">
+        <h2 class="fs-3">About Our Travel Site</h2>
+        <p class="lead lh-sm"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies gravida justo, vitae varius nisi semper vitae. In sed purus tincidunt, semper purus ac, finibus justo. Morbi consequat cursus ante, ac blandit felis eleifend ac. Proin commodo, metus vitae iaculis suscipit.</p>
+      </div>
+  
+      <div class="col text-light ms-5 text-wrap tour-stats">
+      
+        <div class="row ">
+          <h1 class="card-title font-monospace fs-3 col-sm-12 col-md-4 col-xl-2 ">200+</h1>
+          <h2 class="text-body-secondary font-monospace col-sm-12 col-md-8 col-xl-10"> Tours completed</h2>
+        </div>
+  
+        <div class="row ">
+          <h1 class="card-title font-monospace fs-3 col-sm-12 col-md-4 col-xl-2 ">45+</h1>
+          <h2 class="text-body-secondary font-monospace col-sm-12 col-md-8 col-xl-10"> Available Destinations</h2>
+        </div>
+        <div class="row ">
+          <h1 class="card-title font-monospace fs-3 col-sm-12 col-md-4 col-xl-2 ">30+</h1>
+          <h2 class="text-body-secondary font-monospace col-sm-12 col-md-8 col-xl-10"> Summer Holiday Destinations</h2>
+        </div>
+  
+      </div>
+    </section>
+  
+    <!-- Testimonials -->
+    <section class="container-fluid testimonials d-flex flex-column align-items-center">
+      <h2 class="font-monospace">Testimonials</h2>
+  
+      <div class="testimonials-content d-flex flex-column">
+        <div class="testimonial">
+          <div class="testimonial-content" >
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies gravida justo, vitae varius nisi semper vitae. In sed purus tincidunt, semper purus ac, finibus justo.</p>
+            <p class="user">- John Doe</p>
+          </div>
+        </div>
+  
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies gravida justo, vitae varius nisi semper vitae. In sed purus tincidunt, semper purus ac, finibus justo.</p>
+            <p class="user">- Jane Smith</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+  
+    <!-- Footer -->
+    <section class="footer container-fluid d-flex flex-column flex-md-row text-light bg-dark">
+    
+      <div class="logo col-sm mt-2">
+        <div class="d-flex">
+          <img src="../assets/undraw_nature_m5ll.svg" alt="" class="img-fluid ">
+          <h3 class="col ms-1 font-monospace mt-3  p-0 ">{{title}}</h3>
+        </div>
+      </div>
+
+      <div class="contact-info col-sm mt-2">
+        <h4 class="text-primary">Contact Information</h4>
+        <p class="lh-1">Email: example@example.com</p>
+        <p class="lh-1">Phone: 123-456-7890</p>
+      </div>
+  
+      <div class="social-media col-sm mt-2">
+        <h4 class="text-primary">Connect with us</h4>
+        <div class="links">
+          <a href="#"> <i class="fa-brands fa-facebook me-1"></i></a>
+          <a href="#"> <i class="fa-brands fa-twitter me-1"></i></a>
+          <a href="#"> <i class="fa-brands fa-instagram me-1"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp me-1"></i></a>
+        </div>
+      </div>
+      
+    </section>
+
+  </div>
+  
+  <!-- app.component.html -->
+  
+  
+  

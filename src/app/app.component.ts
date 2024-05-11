@@ -8,22 +8,5 @@ import { LoginComponent } from './components/login/login.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'travel-site';
-
-  constructor (private dialog: MatDialog){
-
-  }
   
-
-
-  login(){
-    this.dialog.open(LoginComponent,
-      {
-        height: '400px',
-        width: '400px',
-      
-      }
-        );
-    
-  }
 }

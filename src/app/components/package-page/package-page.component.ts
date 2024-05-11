@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, map } from 'rxjs';
+import { PackageInfoService } from 'src/app/services/package-info.service';
 
 @Component({
   selector: 'app-package-page',
@@ -6,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./package-page.component.scss']
 })
 export class PackagePageComponent {
+
+  packageObject : any;
+  
   packageName: string = "Phuket - PhiPhi - Krabi";
   packagePrice: number = 1000; // Example price
   packageInfo: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu ipsum sagittis, consequat neque et, luctus quam. Duis vestibulum nulla nec eros scelerisque, nec convallis felis malesuada.";
@@ -22,5 +28,17 @@ export class PackagePageComponent {
     'Day 4: Leisure Day',
     'Day 5: Departure'
   ];
+
+
+  constructor(
+    private pkgSvc : PackageInfoService
+  ){
+    this.packageObject = this.pkgSvc.getSelectedPackage()
+  
+  }
+
+  ngOnInit() {
+    
+  }
 
 }
